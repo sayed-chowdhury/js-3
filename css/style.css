@@ -1,0 +1,656 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Roboto", san-serif ;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    font-size: 30px;
+    color: #566366;
+    text-transform: uppercase;
+}
+.pclass{
+    font-size: 14px;
+    color: #919191;
+    line-height: 30px;
+    text-align: justify;
+}
+.classh4{
+    font-size: 20px;
+    font-weight: 700;
+    color: #566366;
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+.anchor{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    padding: 12px;
+    border: 2px solid #fff;
+    display: inline-block;
+}
+.colorfula{
+    color: #2dcb71;
+    border: 2px solid #2dcb71;
+}
+.mcolorfula{
+    font-size: 12px;
+    padding: 5px 9px;
+    color: #fff;
+    background-color: #2dcb71;
+}
+.container{
+    /*width: 73.75%;*/
+    width: 1000px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+/* navigation part start*/
+/* non visible item start */
+#menusidebar{
+    background:#fff;
+    position:fixed;
+    width: 200px;
+    top: 70px;
+    left: 0px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    margin-left: -150px;
+    
+}
+#menusidebar.active{
+    opacity: 1;
+    visibility: visible;
+    margin-left: 0px;
+}
+#menusidebar ul li a{
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    padding:10px 20px;
+    display: block;
+}
+#menusidebar ul li:hover a{
+    background-color: #06a87d;
+    color: #ffffff;
+    transition: .2s;
+}
+#login{
+    height: 200px;
+    width: 400px;
+    background: rgb(226, 226, 226);
+    position: fixed;
+    top: 200px;
+    left: 35%;
+    border-radius: 15px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+#login.active{
+    opacity: 1;
+    visibility: visible;
+}
+#loginform{
+    height: 100%;
+    width: 75%;
+    margin: auto;
+}
+#loginmail{
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 45px 0px 10px ;
+    background-color: #fff ;
+    }
+   #loginmail input{
+    height: 100%;
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+   }
+   #loginpassword{
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 15px 0px ;
+    background-color: #fff;
+   }
+   #loginpassword input{
+    height: 100%;
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+   }
+   #loginpassword i{
+    margin: auto;
+    color: #696868;
+   }
+   #loginform button{
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: #03503c;
+    margin: 10px;
+    margin-top: 0px;
+   }
+   #loginform a{
+    width: 60px;
+    height:30px;
+    padding: 7px ;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: rgb(255, 0, 0);
+    text-align: center;
+   }
+   /* non visible item end */
+#navigation #logo{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:flex-start ;
+    width: 151px;
+}
+#navigation #logo #logopart1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    padding: 8px 13px;
+    background-color: #4b5456;
+}
+#navigation #logo #logopart2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    margin: auto;
+    padding-left: 15px;
+}
+#navigation #logo #logopart3 {
+    font-size: 30px;
+    font-weight: 700;   
+    color: #2ecc71; 
+    margin: auto;
+} 
+#navigation{
+    width: 100%;
+    height: 70px;
+    background-color: #252d2f;  
+}
+#navigation .container{
+    height: 100%;
+    margin: auto;
+}
+#navigation #forflex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height:100%;
+}
+nav #menu{
+    margin-left: auto;
+}
+nav #menu ul{
+    display: flex;
+    flex-wrap:wrap;
+}
+#navigation ul li a{
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    padding:0px 10px;
+    display: inline-block;
+}
+#navigation ul li:hover a{
+    color: #2ecc71;
+}
+/*navigation part end*/
+/*banner part start*/
+#banner{
+    background-image: url(../image/bannerbg.jpg);
+    width: 100%;
+    height: 850px;
+    background-size: cover;
+    position: relative;
+}
+#banner .container{
+    height: 100%;
+    text-transform: uppercase;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+#banner .bannercontent{
+    text-align: center;
+    margin: auto;
+}
+#banner .bannercontent h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    padding: 5px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+  }
+#banner .bannercontent a{
+    margin: 50px;
+}
+/*banner part end*/
+/* extra section start*/
+#extra{
+    height: 320px;
+}
+#extra .container{
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+#extra .extracontent{
+    height: 100%;
+    width: 290px;
+}
+#extra .extracontent h2{
+    padding:25px 0px;
+}
+/*extra section end*/
+/*about section start*/
+#about{
+    height: 600px;
+    position: relative;
+    background-color:#f2f2f1 ;
+}
+#about #picture{
+    height: 600px;
+    width: 45%;
+    background:url(../image/sectionbg1-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/*#about #picture img{
+    height: 100%;
+    width: 100%;
+}*/
+#about .container{
+    width: 89%;
+    margin-left: 0px;
+}
+#about #text{
+    height: 100%;
+    width: 55%;
+    padding: 80px;
+    padding-top: 50px;
+    padding-right: 0px;
+}
+#about #text h2{
+    padding-bottom: 20px;
+}
+#about #text p{
+    text-align: justify;
+}
+#about #text .pclass{
+    width: 100%;
+}
+#about .aboutextradiv{
+    width: 50%;
+    padding-bottom: 20px;
+}
+#about .textitem{
+    margin: 50px 0px;
+}
+#about #text .textcontent{
+    width: 90%;
+}
+#about #text .textcontent h3{
+    font-size: 22px;
+    font-weight: 700;
+    color:#566366 ;
+    padding-bottom:10px ;
+}
+#about #text .emptydiv{
+    width: 10%;
+}
+#about #text .textitem .icon{
+    width: 15%;
+}
+#about #text .textitem .icon i{
+    font-size:30px;
+    color:#2ecc71;
+}
+#about #text .textitem .childcontent{
+    padding-left:10px ;
+    width: 85%;
+}
+/*skill start*/
+#skill .container{
+    height: 500px;
+}
+#skill #content1{
+    width: 50%;
+    padding: 70px 0px;
+}
+#skill #content2{
+    width: 50%;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+#skill #content1 h2{
+    padding-bottom: 30px;
+}
+#skill #content1 p{
+    padding-bottom: 30px;
+}
+#skill #content2 .item{
+    padding:10px 0px;
+}
+#skill #content2 .item .parentitem{
+    height: 22px;
+    width: 100%;
+    color: #f2f2f1;
+    justify-content: left;
+    background-color: #e6e3e3;
+}
+#skill #content2 .item .childitem{
+    height:100% ;
+    background-color:#2ecc71 ;
+    justify-content: left;
+}
+#skill #content2 .item #childitem1{
+    width: 90%;
+}
+#skill #content2 .item #childitem2{
+    width: 80%;
+}
+#skill #content2 .item #childitem3{
+    width: 90%;
+}
+#skill #content2 .item #childitem4{
+    width: 70%;
+}
+#skill #content2 .item .childitem p{
+    color: #fff;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+}
+/*resume start*/
+#resume{
+    background-color: #f2f2f1 ;
+    position: relative;
+}
+#resume::after{
+    position: absolute;
+    content: '';
+    height: 50px;
+    width: 50px;
+    background: #f2f2f1;
+    bottom: -7px;
+    left: 50%;
+    transform: rotate(45deg);
+
+}
+#resume .container{
+    height: 400px ;
+    width:700px;
+    padding: 100px 0px;
+    text-align: center;
+}
+#resume .container p{
+    padding: 30px 0px;
+    justify-content: center;
+}
+/*qualification start*/
+#qualification .part1{
+    height: 700px;
+}
+#qualification .part2{
+    height: 920px;
+}
+#qualification .content1{
+    width: 50%;
+    padding-top: 80px;
+}
+#qualification .content2{
+    width: 50%;
+    padding-top: 80px;
+    padding-left: 50px;
+}
+.educationitem{
+    padding-top: 40px;
+}
+.educationitem hr{
+    margin: 25px 0px;
+    margin-bottom: 15px;
+    color: #ccc;
+} 
+#qualification .line{
+    color: #ccc;
+}
+/*text section*/
+#textsection{
+    height: 400px;
+    background-color: #f2f2f1;
+}
+#textsection .container p{
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    padding-top: 90px;
+}
+#textsection .container h6{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+    color: #566366;
+    padding: 30px;
+}
+/*portfolio start*/
+#portfolio .container{
+    height: 1350px;
+}
+#portfolio #textcontent{
+    text-align: center;
+    padding: 80px 0px 55px 0px;
+}
+#portfolio #textcontent p{
+    text-align: center;
+}
+#portfolio #textcontent h2{
+    padding-bottom: 20px;
+}
+#portfolio #imagecontent {
+    width: 1000px;
+    /*background-color: #005826;*/
+}
+#portfolio #imagecontent .h6{
+    width: 10px 0px;
+    font-size: 14px;
+    color: #fff;
+}
+#portfolio #imagecontent .part{
+    width: 100%;
+    padding: 25px 0px;
+    justify-content: space-between;
+} 
+#portfolio #imagecontent .galleryimage{
+    background-color: #566366;
+    height: 300px;
+    width: 300px;
+}
+.galleryimageresize{
+    height: 300px;
+    width: 300px;
+}
+#portfolio #imagecontent #galleryimage1{
+    padding: 40px;
+}
+#portfolio #imagecontent #galleryimage2{
+    background-image: url(../image/portfolio2.jpg);
+    background-position: center;
+}
+#portfolio #imagecontent #galleryimage3{
+    background-image: url(../image/portfolio3.jpg); 
+    background-position: center;
+}
+#portfolio #imagecontent #galleryimage4{
+    background-image: url(../image/portfolio4.jpg);
+    background-position: center;
+}
+#portfolio #imagecontent #galleryimage5{
+    background-image: url(../image/portfolio5.jpg);
+    background-position: center;
+}
+#portfolio #imagecontent #galleryimage6{
+    background-image: url(../image/portfolio6.jpg);
+    background-position: center;
+}
+#portfolio #imagecontent #galleryimage7{
+    background-image: url(../image/portfolio7.jpg);
+    background-position: center;
+}
+#portfolio #imagecontent #galleryimage8{
+    background-image: url(../image/portfolio8.jpg);
+    background-position: center;
+}
+#portfolio #imagecontent #galleryimage9{
+    background-image: url(../image/portfolio9.jpg);
+    background-position: center;
+}
+#portfolio #imagecontent #galleryimage1 h6{
+    padding-bottom: 20px;
+}
+/*form section*/
+#form h2{
+    color: #fff;
+}
+#form{
+    background-color: #252e30;
+}
+#form .container{
+    height: 840px;
+}
+#form #contactcontent{
+    width: 50%;
+    height: 100%;
+    padding-top: 100px;
+}
+#form #formcontent{
+    width: 50%;
+    padding-left: 50px;
+    height: 100%;
+    padding-top: 100px;
+}
+#form #contactcontent .pclass{
+    padding: 30px 0px;
+}
+#form #contactcontent table{
+    width: 225px;
+}
+#form #contactcontent table .first{
+    width: 75;
+    height: 20px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 30px;
+}
+#form #contactcontent table .second{
+    width: 150px;
+    height: 20px;
+    font-size: 14px;
+    color: #919191;
+    line-height: 30px;
+}
+#form #formcontent form h6{
+    width: 10px 0px;
+    font-size: 14px;
+    color: #fff;
+} 
+#form #formcontent form .sm{
+    width: 100%;
+    height: 40px;
+    background-color: #4b5456;
+    border: 0px;
+}
+#form #formcontent form .lg{
+    height: 270px;
+}
+#form #formcontent form h6{
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+#form #formcontent a{
+    background-color: #191f21;
+    padding: 10px 25px;
+    border: none;
+}
+#form #formcontent #lasta{
+    padding: 30px;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+/*footer*/
+footer{
+    height: 200px;
+    width: 100%;
+    background-color: #191f21;
+}
+footer .pclass{
+    font-size: 12px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+footer ul{
+    justify-content: center;
+}
+footer ul li{
+    padding: 5px;
+}
+footer ul .iconbox{
+    height: 35px;
+    width: 35px;
+    border: 0px;
+    border-radius: 21px;
+    background-color:#4b5456 ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+footer ul li a{
+    display: inline-block;
+    margin: auto;
+}
+footer ul li i{
+    color:#191f21;
+    font-size: 20px;
+    transition: .8s;
+}
+footer ul li:hover i{
+    color: #fff;
+}
